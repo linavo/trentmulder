@@ -1,0 +1,64 @@
+.aboutnav {
+  @extend .hero;
+  height: 30vh !important;
+  background-image: url(imgs/daniel.jpg);
+  background-size: cover;
+  background-position: 0 30%;
+}
+.abouttitle {
+  padding: 2.5em 0 0 12em;
+  a {
+    display: inline;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  p,
+  h1,
+  a {
+    color: black;
+    font-weight: 300;
+  }
+}
+.contactSection {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  h1,
+  h2,
+  p,
+  li,
+  a {
+    color: black;
+  }
+  .contactFirst,
+  .contactSecond {
+    width: 50vw;
+    padding: 5em;
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 3em;
+    }
+    h2 {
+      letter-spacing: 1.5px;
+    }
+  }
+  .contactFirst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      padding: 2em;
+    }
+    p {
+      line-height: 4em;
+    }
+  }
+  .contactSecond {
+    border-left: 1px solid rgb(206, 206, 206);
+  }
+}
+li {
+  list-style: none;
+}
