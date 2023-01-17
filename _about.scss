@@ -21,7 +21,7 @@
   }
 }
 .contactSection {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   h1,
@@ -33,6 +33,7 @@
   }
   .contactFirst,
   .contactSecond {
+    height: 58vh;
     width: 50vw;
     padding: 5em;
     h1 {
@@ -61,4 +62,43 @@
 }
 li {
   list-style: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35em;
+  align-items: center;
+  input {
+    margin-top: 1em;
+    border: none;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    width: 28em;
+    padding: 0.5em;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+  }
+  textarea {
+    width: 34em;
+    border-radius: 0;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 3em;
+    color: black;
+  }
+  button {
+    transition: 0.5s;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.8em 2em;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+button:hover {
+  transition: 0.25s;
+  background-color: black;
+  color: white;
 }
