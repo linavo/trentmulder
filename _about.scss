@@ -69,6 +69,7 @@ form {
   width: 35em;
   align-items: center;
   input {
+    color: rgb(75, 75, 75);
     margin-top: 1em;
     border: none;
     border-bottom: 1px solid rgb(182, 182, 182);
@@ -83,7 +84,8 @@ form {
     border-radius: 0;
     border: 1px solid rgb(182, 182, 182);
     margin: 3em;
-    color: black;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(75, 75, 75);
   }
   button {
     transition: 0.5s;
