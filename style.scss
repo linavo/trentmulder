@@ -13,13 +13,13 @@ $headerfont: "Trajan Pro 3";
 
 @mixin textStyle {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 * {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   color: $lightColor;
 }
 a {
@@ -54,7 +54,7 @@ p {
         transition: ease-in-out 0.3s;
         font-size: 0.8em;
         list-style: none;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.25em;
         margin-left: 5em;
         padding: 1em;
       }
@@ -94,12 +94,29 @@ h1 {
   z-index: -1;
 }
 .bg1 {
+  width: 100vw;
+  height: 190vh;
+  animation: moving 12s infinite alternate ease-in-out;
+}
+
+@keyframes moving {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+.bg1container {
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: -2;
   height: 190vh;
+  width: 100vw;
+  overflow: hidden;
 }
+
 footer {
   background-color: rgb(0, 0, 0);
   height: 90vh;
@@ -154,8 +171,9 @@ footer {
   }
 }
 .aboutSection {
-  height: 90vh;
-  background-color: rgb(255, 255, 255);
+  background-image: url(imgs/trentbg1.jpg);
+  background-size: cover;
+  height: 110vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -165,8 +183,17 @@ footer {
   p {
     line-height: 1.5em;
     font-size: 15px;
-    letter-spacing: 1px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
     color: black;
-    width: 500px;
+    width: 650px;
+  }
+}
+.aboutTrentindexcon {
+  h2 {
+    color: black;
+    font-family: $headerfont;
+    font-size: 4em;
+    margin-bottom: 0.5em;
   }
 }
