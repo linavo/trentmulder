@@ -197,3 +197,29 @@ footer {
     margin-bottom: 0.5em;
   }
 }
+@media screen and (max-width: 900px) {
+  .bg1container {
+    height: 100vh;
+  }
+  footer {
+    height: 50vh;
+  }
+  .bg1 {
+    height: 100vh;
+  }
+  .whiteborder {
+    display: none;
+  }
+  .hero {
+    height: 50vh;
+    h1 {
+      margin-bottom: 3em;
+    }
+  }
+  .aboutSection {
+    height: 70vh;
+    img {
+      display: none;
+    }
+  }
+}

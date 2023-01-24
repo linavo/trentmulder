@@ -125,3 +125,32 @@ button:hover {
   color: black;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .contactSection {
+    width: 100vw;
+  }
+  form {
+    width: 15em;
+    input,
+    textarea {
+      width: 15em;
+    }
+    button {
+      padding: 0.8em 5em;
+    }
+  }
+  .abouttitle {
+    padding: 0;
+    padding-left: 3em;
+    padding-top: 3em;
+    h1 {
+      font-size: 4em;
+    }
+  }
+  .aboutSection2 {
+    flex-direction: column;
+    img {
+      height: 40%;
+    }
+  }
+}
